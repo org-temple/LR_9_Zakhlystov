@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="root.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header id="header" class="header">
+        <nav></nav>
+        <div class="container">
+            <img src="logo.png" alt="logo" class="logo" />
+            <div class="wrapper">
+                <div class="offer">
+                    <h1 class="title animate__animated animate__bounc" id="title">С помощью нас </br>
+                        вы сможете создать то, о чем </h1>
+                    <span class="title__span">желаете!</span>
+                    <p class="offer__text">Наши возможности + опыт позволят Вам
+                        достичь огрмного успеха. Мы верим в вас! И знаем это на
+                        все 100%. Вас не остановить!</p>
+                    <a href="#" class="button" id="button">Узнать больше...</a>
+                </div>
+                <img src="mobile_phone.png" alt="mobile_phone" class="mobile_phone" id="mobile_phone" />
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="info" id="info">
+            <div class="container">
+                <h2 class="title_black">Что Вам необходимо?</h2>
+                <div class="wrapper">
+                    <div class="box">
+                        <img src="pencil.png" alt="pencil" class="pencil" />
+                        <h3 class="title_black_small">Первый блок</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                    </div>
+                    <div class="box">
+                        <img src="balloon.png" alt="balloon" class="balloon" />
+                        <h3 class="title_black_small">Второй блок</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit?</p>
+                    </div>
+                    <div class="box">
+                        <img src="flag.png" alt="flag" class="flag" />
+                        <h3 class="title_black_small">Третий блок</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="form" id="form_added">
+            <div class="container">
+                <h2 class="title_black">Форма регистрации ребенка</h2>
+                <div class="wrapper1">
+                    <form action="#" method="post" enctype="multipart/form-data" class="formplace">
+                        <div><input class="box_form" type="text" name="" id="name" value="" placeholder="Имя ребенка">
+                            <span class="formspan" id="nameMsg"></span>
+                        </div>
+                        <div><input class="box_form" type="text" name="" id="age" value=""
+                                placeholder="Возраст ребенка (полных лет)">
+                            <span class="formspan" id="ageMsg"></span>
+                        </div>
+                        <div><input class="box_form" type="tel" name="" id="child_tel"
+                                placeholder="Телефон ребенка (XXX-XXX-XXXX)">
+                            <span class="formspan" id="child_telMsg"></span>
+                        </div>
+                        <div><input class="box_form" type="text" name="" id="date" value=""
+                                placeholder="Дата рождения (дд.мм.гггг)">
+                            <span class="formspan" id="dateMsg"></span>
+                        </div>
+                        <div><input class="box_form" type="text" name="" id="interests" value=""
+                                placeholder="Опишите увлечения ребенка">
+                            <span class="formspan" id="interestsMsg"></span>
+                        </div>
+                        <div><button class="button_form" type="submit">Отправить форму</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="form" id="form_default">
+            <div class="container">
+                <h2 class="title_black">Форма заказа обратного звонка</h2>
+                <div class="wrapper1">
+                    <form action="#" method="post" enctype="multipart/form-data" class="formplace">
+                        <div><input class="box_form" type="text" name="name" id="" value="" placeholder="Имя" required
+                                maxlength="100"></div>
+                        <div><input class="box_form" type="text" name="email" id="" value=""
+                                placeholder="Введите свой E-mail" required minlength="5" maxlength="100">
+                        </div>
+                        <div><input class="box_form" type="tel" name="tel" id="tel" placeholder="Телефон (XXX-XXX-XXXX)"
+                                required minlength="12" maxlength="12" pattern="\d{3}-\d{3}-\d{4}"></div>
+                        <div><input class="box_form" type="text" name="theme" id="" value=""
+                                placeholder="Какая тема Вас интересует?" required minlength="10" maxlength="1000"></div>
+                        <div><button class="button_form" type="submit">Отравить вопрос!</button></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer">
+        <nav></nav>
+        <div>© Все на этом сайте защищено</div>
+    </footer>
+
+</body>
+
+</html>
