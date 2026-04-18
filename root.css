@@ -1,0 +1,441 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #201b2d;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+}
+
+/*Обнуляющий CSS */
+
+div,
+p,
+input,
+button,
+form,
+span,
+a,
+ul,
+li {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 900;
+}
+
+p {
+	line-height: 1.65em;
+}
+
+/*Header*/
+
+/*Контейнер, который используется во всех блоках для выравнивания контента по ширине*/
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+/*Первый блок*/
+
+.header {
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7abcff+0,60abf8+44,4096ee+100;Blue+3D+%2314 */
+	background: #7abcff;
+	/* Old browsers */
+	background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7abcff', endColorstr='#4096ee', GradientType=0);
+	/* IE6-9 */
+	color: #fff;
+	padding-top: 60px;
+	padding-bottom: 140px;
+	color: #fff;
+}
+
+/*Оболочка для контента первого блока*/
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/*Левая часть контента*/
+.offer {
+	width: 700px;
+}
+
+.title {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 40px;
+	margin-bottom: 10px;
+}
+
+.title__span {
+	font-size: 48px;
+	letter-spacing: 2px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+}
+
+.offer__text {
+	font-size: 14px;
+	width: 350px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.text {
+	padding: 30px 30px;
+	background-color: coral;
+}
+
+/*Правая часть контента - картинка*/
+.mobile_phone {
+	margin-top: 20px;
+	width: 480px;
+}
+
+/*Кнопка в пером блоке*/
+.button {
+	width: 220px;
+	height: 55px;
+	color: black;
+	font-size: 16px;
+	font-weight: bold;
+	display: block;
+	text-decoration: none;
+	background-color: #ffd429;
+	padding: 15px 0px;
+	text-align: center;
+	transition: all 0.5s ease;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.info {
+	padding-bottom: 100px;
+	background: #ffffff;
+	color: #000000;
+}
+
+/*Main*/
+
+/*Второй блок*/
+
+
+.title_black {
+	font-size: 30px;
+	font-weight: bold;
+	padding-top: 100px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.box {
+	width: 300px;
+	justify-content: center;
+	text-align: center;
+}
+
+
+.title_black_small {
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+
+
+/*Третий блок*/
+.form {
+	padding-bottom: 100px;
+	background: #ECF3F8;
+	color: #000000;
+}
+
+.wrapper1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+}
+
+.box_form {
+	width: 350px;
+	height: 40px;
+	justify-content: center;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 20px;
+
+}
+
+input::placeholder {
+	padding-left: 25px;
+}
+
+input {
+	padding-left: 25px;
+}
+
+.button_form {
+	width: 350px;
+	height: 45px;
+	font-size: 16px;
+	display: block;
+	background-color: #ffd429;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.button_form:hover {
+	cursor: pointer;
+}
+
+/*Footer*/
+
+.footer {
+	background: #7abcff;
+	background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+	background: -webkit-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+	background: linear-gradient(to top, #7abcff 0%, #2b7ed1 44%, #034a92 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7abcff', endColorstr='#4096ee', GradientType=0);
+	padding-top: 80px;
+	padding-bottom: 80px;
+	color: #ffffff;
+	text-align: center;
+}
+
+
+
+
+
+
+/*Настройка адаптивности с помощью медиа-запросов*/
+
+@media screen and (max-width:1200px) {
+	.container {
+		width: 960px;
+	}
+}
+
+
+@media screen and (max-width:992px) {
+	.logo {
+		max-height: 100%;
+		width: auto;
+	}
+
+	.container {
+		width: 720px;
+	}
+
+	.wrapper {
+		flex-direction: column;
+	}
+
+	.offer {
+		margin: 50px 0px 100px 0px;
+	}
+
+	.offer__text {
+		font-size: 16px;
+	}
+
+	.mobile_phone {
+		max-height: 100%;
+		width: auto;
+	}
+
+	.title_black {
+		font-size: 34px;
+		margin-bottom: 110px;
+	}
+
+	.pencil {
+		scale: 2;
+	}
+
+	.balloon {
+		scale: 2;
+	}
+
+	.flag {
+		scale: 2;
+	}
+
+	.title_black_small {
+		font-size: 24px;
+		margin-top: 60px;
+		margin-bottom: 30px;
+	}
+
+	.box {
+		width: 300px;
+		justify-content: center;
+		text-align: center;
+		margin-bottom: 100px;
+		margin-top: 20px;
+	}
+
+	p {
+		font-size: 20px;
+	}
+
+	.button {
+		width: 300px;
+		height: 75px;
+		text-align: center;
+		padding: 24px 0px;
+		font-size: 18px;
+	}
+
+	.formplace {
+		width: 100%;
+	}
+
+	.box_form {
+		width: 100%;
+		height: 60px;
+		margin-top: 40px;
+		font-size: 20px;
+	}
+
+	input::placeholder {
+		font-size: 20px;
+		padding-left: 25px;
+	}
+
+	.button_form {
+		width: 100%;
+		height: 60px;
+		font-size: 20px;
+		margin-top: 40px;
+	}
+
+	.footer {
+		font-size: 20px;
+	}
+
+	#ageMsg,
+	#dateMsg,
+	#nameMsg,
+	#child_telMsg,
+	#interestsMsg {
+		display: block;
+		margin-left: 10px;
+	}
+}
+
+
+@media screen and (max-width:768px) {
+	.logo {
+		width: auto;
+		height: 45px;
+	}
+
+	.container {
+		width: 540px;
+	}
+
+	.offer {
+		width: 100%;
+	}
+
+	.title {
+		font-size: 36px;
+		line-height: 55px;
+	}
+
+	.title__span {
+		font-size: 52px;
+	}
+
+	.offer__text {
+		font-size: 20px;
+	}
+
+	.button {
+		width: 350px;
+		height: 80px;
+		text-align: center;
+		padding: 23px 0px;
+		font-size: 24px;
+	}
+
+	.title_black {
+		font-size: 36px;
+		margin-bottom: 110px;
+	}
+
+	.title_black_small {
+		font-size: 26px;
+	}
+
+	p {
+		font-size: 22px;
+	}
+
+	.box_form {
+		height: 70px;
+		margin-top: 60px;
+	}
+
+	input::placeholder {
+		font-size: 24px;
+		padding-left: 35px;
+	}
+
+	.button_form {
+		width: 100%;
+		height: 70px;
+		font-size: 26px;
+		padding-bottom: 4px;
+		margin-top: 60px;
+	}
+
+	.footer {
+		font-size: 24px;
+	}
+}
+
+
+input:required:invalid {
+	border: 2px dashed rgb(255, 89, 0);
+}
+
+input:required:valid {
+	box-shadow: 0 0 5px 1px greenyellow;
+}
+
+
+
+.valid {
+	color: green;
+	font-size: 14px;
+}
+
+.invalid {
+	color: red;
+	font-size: 14px;
+}
+
+#ageMsg,
+#dateMsg,
+#nameMsg,
+#child_telMsg,
+#interestsMsg {
+	position: absolute;
+	margin-left: 10px;
+}
